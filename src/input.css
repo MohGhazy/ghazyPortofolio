@@ -9,6 +9,22 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.typed-cursor {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .typed-cursor {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .typed-cursor {
+    font-size: 3rem;
+  }
+}
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
