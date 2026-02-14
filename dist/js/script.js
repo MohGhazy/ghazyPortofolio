@@ -1,38 +1,41 @@
-// navbar-fixed
-window.onscroll = function () {
- const header = document.querySelector('header');
- const fixedNav = header.offsetTop;
+document.addEventListener("DOMContentLoaded", function(){
 
- if (window.pageYOffset > fixedNav) {
-  header.classList.add('navbar-fixed');
- }else{
-  header.classList.remove('navbar-fixed');
- }
-};
+  /* ================= NAVBAR SCROLL ================= */
+  const header = document.querySelector("header");
 
-//hamburger
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > 50){
+      header.classList.add("navbar-fixed");
+    }else{
+      header.classList.remove("navbar-fixed");
+    }
+  });
 
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
 
-hamburger.addEventListener('click', function () {
- hamburger.classList.toggle('hamburger-active');
- navMenu.classList.toggle('hidden');
-});
+  /* ================= MOBILE BURGER ================= */
+  const burger = document.getElementById("burgerBtn");
+  const menu = document.getElementById("mobileMenu");
+  const links = document.querySelectorAll(".mobile-link");
 
-// Animasi
-document.addEventListener("DOMContentLoaded", function () {
- AOS.init({
-  duration: 1500,
-  once: true,
- });
- new Typed("#typed-name", {
-  strings: ["Mohammad Ghazy"],
-  typeSpeed: 100,
-  backSpeed: 50,
-  backDelay: 500,
-  loop: true,
-  showCursor: true,
-  cursorChar: "|"
- });
+  if(burger && menu){
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("burger-active");
+
+      if(menu.style.maxHeight){
+        menu.style.maxHeight = null;
+      } else {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+      }
+    });
+
+    links.forEach(link=>{
+      link.addEventListener("click",()=>{
+        burger.classList.remove("burger-active");
+        menu.style.maxHeight = null;
+      });
+    });
+
+  }
+
 });

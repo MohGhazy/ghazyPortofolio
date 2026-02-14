@@ -3,330 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="dist/output.css" rel="stylesheet">
+
+  <link href="./dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="dist/image/favicon.io/favicon.ico" />
+  <link rel="icon" href="./dist/image/favicon.io/favicon.ico" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <title>Portofolio</title>
+
+  <title>Portofolio Ghazy</title>
 </head>
-<body class="overflow-x-hidden">
-  <!-- Navbar Start -->
-    <header class="top-0 left-0 w-full absolute z-50 bg-transparent flex items-center">
-      <div class="w-full px-4">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="font-bold text-xl text-primary block py-6">
-              ghazy
-            </a>
-          </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-              <span class="hamburger-line transition-transform duration-300 ease-in-out" style="transform-origin: top left;"></span>
-              <span class="hamburger-line transition-transform duration-300 ease-in-out" style="transform-origin: center;"></span>
-              <span class="hamburger-line transition-transform duration-300 ease-in-out" style="transform-origin: bottom left;"></span>
-            </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:bg-transparent lg:rounded-none">
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a href="#home" class="text-base text-slate-900 group-hover:text-primary py-2 mx-8 flex transition duration-300">Beranda</a>
-                </li>
-                <li class="group">
-                  <a href="#about" class="text-base text-slate-900 group-hover:text-primary py-2 mx-8 flex transition duration-300">Tentang Saya</a>
-                </li>
-                <li class="group">
-                  <a href="#portofolio" class="text-base text-slate-900 group-hover:text-primary py-2 mx-8 flex transition duration-300">Portofolio</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-  <!-- Navbar End -->
 
-  <!-- Hero Section Start -->
-    <section id="home" class="pt-36 pb-32">
-      <div class="w-full px-4 mx-auto">
-        <div class="flex flex-wrap lg:flex-nowrap">
-          <div class="w-full self-center px-4 lg:w-1/2 flex justify-center">
-            <div class="w-full max-w-md text-center lg:text-end" data-aos="fade-right">
-              <div class="lg:text-right  uppercase">
-                <h1 class="text-2xl font-semibold text-primary md:text-3xl">
-                i am
-                </h1>
-                <span id="typed-name" class="typed-cursor text-4xl inline font-bold font-[Poppins] text-gunmetal"></span>
-              </div>
-              <h2 class="font-medium text-lg mb-5 mt-1 text-slate-500 lg:text-xl">
-                 A Web Developer<span class="text-slate-800 font-medium"> & </span>Student
-              </h2>
-              <p class="font-medium text-xl text-slate-400 leading-relaxed">Aku percaya, setiap project adalah kesempatan buat berkembang. Gagal memang bisa. Tapi nyerah? <span class="font-bold text-slate-900">Tidak dulu.</span>
-              </p>
-              <a target="_blank" class="text-base font-semibold text-white bg-primary hover:opacity-80 hover:shadow-lg px-20 rounded-full transition duration-300 ease-in-out">
-              </a>
-            </div>
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-0 lg:right-0 flex justify-center data-aos="fade-left">
-              <img src="dist/image/ghazy.png" height="400" width="250" alt="Ghazy" srcset="" class="w-72 mx-auto">
-              <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-100">
-                <svg height="400" width="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#a3d5e0" d="M59.7,-37C66.9,-22,55.1,1.5,42,15.8C28.9,30.1,14.4,35.3,1.5,34.4C-11.4,33.5,-22.8,26.6,-29.2,16.2C-35.7,5.7,-37.2,-8.3,-31.5,-22.5C-25.9,-36.7,-12.9,-51,6.7,-54.9C26.3,-58.7,52.5,-52.1,59.7,-37Z" transform="translate(100 100) scale(1.6)" />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-   <!-- Hero Section End -->
+<body class="overflow-x-hidden bg-[#05070d] text-slate-200">
 
-   <!-- About Section Start -->
-    <section id="about" class="pt-12 pb-36 md:pt-36 bg-slate-100">
-      <div class="w-full px-4 mx-auto">
-        <h4 class="font-bold text-3xl px-4 uppercase text-primary mb-3 md:text-center lg:text-4xl lg:mb-9">Tentang Saya</h4>
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-8 mx-auto md:w-1/2 lg:pl-20 md:text-right xl:text-right" data-aos="fade-up">
-            <h2 class="font-bold text-3xl text-slate-900 mb-4">Riwayat Pendidikan</h2>
-            <!-- <p class="font-medium text-slate-500 max-w-xl text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, soluta.</p> -->
-            <ul class="font-medium text-slate-500 max-w-xl text-base">
-              <li class="py-2">MI Nurul Ulum, Surabaya (2012 - 2018)</li>
-              <li class="py-2">SMPN 38, Surabaya (2018 - 2021)</li>
-              <li class="py-2">SMKS Nurul Jadid, Probolinggo (2021 - 2024)</li>
-              <li class="py-2">Universitas Nurul Jadid, Probolinggo (2024 - Sekarang)</li>
-            </ul>
-          </div>
-          <div class="w-full px-4 md:w-1/2 lg:pr-20 text-base" data-aos="fade-up" data-aos-delay="200">
-            <h2 class="font-bold text-3xl text-slate-900 mb-4">Basic Skills</h2>
-            <p class="font-medium text-base pt-2 mb-1 text-slate-500 uppercase">html
-            </p>
-            <div class="w-11/12 bg-gray-200 rounded-full h-2.5">
-              <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
-            </div>
-            <p class="font-medium text-base pt-2 mb-1 text-slate-500 uppercase">css
-            </p>
-            <div class="w-11/12 bg-gray-200 rounded-full h-2.5">
-              <div class="bg-primary h-2.5 rounded-full" style="width: 70%"></div>
-            </div>
-            <p class="font-medium text-base pt-2 mb-1 text-slate-500 uppercase">Java Script
-            </p>
-            <div class="w-11/12 bg-gray-200 rounded-full h-2.5">
-              <div class="bg-primary h-2.5 rounded-full" style="width: 20%"></div>
-            </div>
-          </div>
-          <!-- <div class="flex items-center justify-center mx-auto mt-10 md:mt-0 lg:mt-0 xl:mt-0">
-            <a href="https://instagram.com/mohghazy_" target="_blank" class="mr-4 w-9 h-9 rounded-full flex items-center border border-slate-500 text-slate-500 justify-center hover:border-rose-700 hover:text-white hover:bg-rose-500 transition duration-300 ease-in-out">
-              <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>Instagram</title>
-                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
-              </svg>
-            </a>
-            <a href="https://github.com/MohGhazy" target="_blank" class="mr-4 w-9 h-9 rounded-full flex items-center border justify-center text-slate-500 hover:border-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-in-out">
-              <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>GitHub</title>
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            </a>
-          </div> -->
-        </div>
-      </div>
-    </section>
-   <!-- About Section End -->
+<!-- NAVBAR -->
+<header class="top-0 left-0 w-full absolute z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+  <div class="w-full px-5 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between">
 
-   <!-- Portofolio Section Start -->
-    <section id="portofolio" class="pt-32 pb-32">
-      <div class="container mx-auto">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16" data-aos="zoom-in">
-            <h4 class="font-semibold mb-2 text-2xl text-primary lg:text-4xl">Portofolio</h4>
-            <h2 class="font-bold text-slate-900 text-3xl mb-4 sm:text-4xl  lg:text-5xl">Project terbaru</h2>
-            <!-- <p class="font-medium text-md text-slate-500 md:text-lg">Project lintas dunia</p> -->
-          </div>
-        </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="w-full px-4 md:w-1/2" data-aos="fade-up" data-aos-delay="300">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="dist/image/portfolio/blog-frecationer.png" alt="Blog Frecationer" class="w-full">
-            </div>
-            <a href="https://frecationer.com" class="hover:opacity-80"><h3 class="font-semibold text-xl text-slate-900 mt-5 mb-3">Blog Frecationer</h3></a>
-            <p class="font-medium text-base text-slate-500">Saya mengembangkan tampilan frontend-nya. Proyek ini dibangun dengan HTML, CSS, dan Tailwind CSS, fokus pada tampilan yang responsif dan fungsional.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-   <!-- Portofolio Section End -->
+      <!-- LOGO -->
+      <a href="#home" class="font-bold text-lg sm:text-xl text-primary py-5 tracking-widest">
+        Ghazy
+      </a>
 
-   <!-- Clients Section Start -->
-    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-800">
-      <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold mb-2 text-lg text-primary">Client</h4>
-            <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl  lg:text-5xl">Yang Pernah Bekerja Sama</h2>
-            <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum tempore explicabo exercitationem?</p>
-          </div>
-          <div class="w-full px-4">
-            <div class="flex flex-wrap justify-center items-center">
-              <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-400 md:mx-6 lg:mx-8">
-                <img src="dist/image/clients/google.png" alt="google">
-              </a>
-              <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-400 md:mx-6 lg:mx-8">
-                <img src="dist/image/clients/gojek.png" alt="google">
-              </a>
-            </div>
-          </div>
-        </div>
-    </section> -->
-   <!-- Clients Section End -->
+      <!-- DESKTOP MENU -->
+      <nav class="hidden lg:flex gap-10 text-sm lg:text-base">
+        <a href="#home" class="hover:text-primary transition">Beranda</a>
+        <a href="#about" class="hover:text-primary transition">Tentang</a>
+        <a href="#portofolio" class="hover:text-primary transition">Portofolio</a>
+      </nav>
 
-   <!-- Blog Section Start -->
-    <!-- <section id="blog" class="pt-36 pb-32 bg-slate-100">
-      <div class="container mx-auto">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold mb-2 text-lg text-primary">Blog</h4>
-            <h2 class="font-bold text-slate-900 text-3xl mb-4 sm:text-4xl  lg:text-5xl">Tulisan Terkini</h2>
-            <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque corrupti reprehenderit earum deserunt.</p>
-          </div>
-        </div>
+      <!-- BURGER BUTTON -->
+      <button id="burgerBtn"
+      class="lg:hidden relative w-8 h-8 flex items-center justify-center">
 
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="dist/image/blog/1.jpg" alt="programming" class="w-full" srcset="">
-              <div class="py-8 px-6">
-                <h3>
-                  <a href="" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate">Tips Belajar Programming</a>
-                </h3>
-                <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, necessitatibus.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary hover:opacity-80 transition duration-300 py-2 px-4 rounded">Baca Selengkapnya..</a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="dist/image/blog/1.jpg" alt="programming" class="w-full" srcset="">
-              <div class="py-8 px-6">
-                <h3>
-                  <a href="" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate">Tips Belajar Programming</a>
-                </h3>
-                <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, necessitatibus.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary hover:opacity-80 transition duration-300 py-2 px-4 rounded">Baca Selengkapnya..</a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="dist/image/blog/1.jpg" alt="programming" class="w-full" srcset="">
-              <div class="py-8 px-6">
-                <h3>
-                  <a href="" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate">Tips Belajar Programming</a>
-                </h3>
-                <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, necessitatibus.</p>
-                <a href="#" class="font-medium text-sm text-white bg-primary hover:opacity-80 transition duration-300 py-2 px-4 rounded">Baca Selengkapnya..</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-   <!-- Blog Section End -->
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
 
-   <!-- Contact Section Start -->
-    <!-- <section id="contact" class="pt-36 pb-32">
-      <div class="container mx-auto">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold mb-2 text-lg text-primary">Kontak</h4>
-            <h2 class="font-bold text-slate-900 text-3xl mb-4 sm:text-4xl  lg:text-5xl">Hubungi Kami</h2>
-            <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam eveniet dicta.</p>
-          </div>
-        </div>
-        
-        <form action="">
-          <div class="w-full lg:w-2/3 mx-auto">
-            <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-primary font-bold ">Nama</label>
-              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-300 ease-in-out">
-            </div>
-            <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base text-primary font-bold ">Email</label>
-              <input type="email" id="email" name="email" placeholder="Masukkan email Anda" class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-300 ease-in-out">
-            </div>
-            <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base text-primary font-bold ">Pesan</label>
-            <textarea id="message" name="message" rows="4" placeholder="Masukkan pesan Anda" class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition duration-300 ease-in-out h-32"></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button class="text-base font-semibold text-white bg-primary hover:opacity-80 hover:shadow-lg transition duration-300 py-2 px-8 rounded-full w-full">Kirim Pesan</button>
-            </div>
-          </div>
-        </form>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+  class="lg:hidden absolute top-full left-0 w-full
+  bg-gradient-to-b from-[#060a12]/95 to-[#02040a]/95
+  backdrop-blur-2xl
+  border-b border-white/10
+  shadow-[0_20px_50px_rgba(0,0,0,0.65)]
+  overflow-hidden max-h-0 transition-all duration-500">
+
+    <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+    <div class="flex flex-col px-6 py-4 gap-4 text-sm">
+      <a href="#home" class="mobile-link">Beranda</a>
+      <a href="#about" class="mobile-link">Tentang</a>
+      <a href="#portofolio" class="mobile-link">Portofolio</a>
+    </div>
+
+  </div>
+</header>
+
+
+
+<!-- HERO -->
+<section id="home" class="pt-28 md:pt-36 lg:pt-40 pb-20 md:pb-28 lg:pb-36 relative overflow-hidden isolate">
+
+  <!-- glow background -->
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_20%_20%,rgba(163,213,224,0.15),transparent_40%)]"></div>
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_80%_70%,rgba(120,200,255,0.1),transparent_40%)]"></div>
+
+  <!-- grid -->
+  <div class="absolute inset-0 z-0 opacity-[0.06]
+  bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),
+  linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)]
+  bg-[size:60px_60px]"></div>
+
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8 relative z-20">
+
+    <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
+
+      <!-- TEXT -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+
+        <h1 class="text-sm sm:text-base md:text-lg text-primary font-semibold uppercase tracking-widest">
+          I Am
+        </h1>
+
+        <span id="typed-name"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+        font-bold text-transparent bg-clip-text
+        bg-gradient-to-r from-[#a3d5e0] via-[#7dd3fc] to-[#c084fc]
+        drop-shadow-[0_0_25px_rgba(125,211,252,0.4)]">
+        </span>
+
+        <p class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg text-slate-400">
+          Keep scrolling to see how I turn ideas into digital experiences
+        </p>
+
+        <a href="./dist/image/CV_Ghazy.pdf"
+           class="inline-block mt-6 sm:mt-8 md:mt-10
+           px-6 sm:px-7 md:px-8
+           py-3 sm:py-3.5 md:py-4
+           text-sm sm:text-base
+           rounded-full
+           bg-gradient-to-r from-[#7dd3fc] to-[#a3d5e0]
+           text-black font-semibold
+           hover:scale-105 transition duration-300
+           shadow-[0_0_30px_rgba(163,213,224,0.4)]">
+          Download CV
+        </a>
 
       </div>
 
-    </section> -->
-   <!-- Contact Section End -->
+      <!-- FOTO -->
+      <div class="w-full lg:w-1/2 flex justify-center relative" data-aos="fade-left">
 
-   <!-- Footer Section Start -->
-    <footer class="bg-slate-900 pt-24 pb-12">
-      <div class="container mx-auto">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2 mx-auto">
-            <!-- <h2 class="font-bold text-4xl text-white mb-5">Kontak</h2> -->
-            <h3 class="font-bold text-4xl mb-2">Hubungi Saya</h3>
-            <p>mohghazyaa@gmail.com</p>
-            <p>Sidoarjo</p>
-            <p>Jawa Timur</p>
-          </div>
-          <!-- <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
-            <ul class="text-slate-300 text-base">
-              <li>
-                <a href="#" class="inline-block hover:text-primary transition duration-300 mb-3">Programming</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block hover:text-primary transition duration-300 mb-3">Teknologi</a>
-              </li>
-              <li>
-                <a href="#" class="inline-block hover:text-primary transition duration-300 mb-3">Gaya Hidup</a>
-              </li>
-            </ul>
-          </div> -->
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class="text-slate-300 text-base">
-              <li>
-                <a href="#" class="inline-block hover:text-primary transition duration-300 mb-3">Beranda</a>
-              </li>
-              <li>
-                <a href="#about" class="inline-block hover:text-primary transition duration-300 mb-3">Tentang Saya</a>
-              </li>
-              <li>
-                <a href="#portofolio" class="inline-block hover:text-primary transition duration-300 mb-3">Portofolio</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="w-full pt-10 border-t border-slate-700 items-center">
-          <div class="flex items-center justify-center mb-5">
-              <a href="https://instagram.com/mohghazy_" target="_blank" class="mr-4 w-9 h-9 rounded-full flex items-center border border-slate-500 text-slate-500 justify-center hover:border-rose-700 hover:text-white hover:bg-rose-500 transition duration-300 ease-in-out">
-                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>Instagram</title>
-                  <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
-                </svg>
-              </a>
-              <a href="https://github.com/MohGhazy" target="_blank" class="mr-4 w-9 h-9 rounded-full flex items-center border justify-center text-slate-500 hover:border-slate-900 hover:text-white hover:bg-slate-900 transition duration-300 ease-in-out">
-                <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <title>GitHub</title>
-                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              </a>
-          </div>
-          <p class="font-medium text-xs text-slate-500 text-center">Created by <a href="#" class="font-bold text-primary">Ghazy</a></p>
+        <!-- glow -->
+        <div class="absolute -z-10
+        w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80
+        rounded-full
+        bg-gradient-to-r from-[#0f172a] via-[#020617] to-[#020617]
+        blur-[110px] opacity-80"></div>
+
+        <img src="./dist/image/ghazy.png"
+        class="w-44 sm:w-52 md:w-60 lg:w-72
+        relative z-10 rounded-2xl
+        brightness-75 contrast-125 saturate-95
+        drop-shadow-[0_10px_40px_rgba(0,0,0,0.7)]">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="py-20 md:py-28 lg:py-36 bg-[#06090f] relative">
+
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(163,213,224,0.08),transparent_60%)]"></div>
+
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-10 md:gap-14 lg:gap-16">
+
+      <div data-aos="fade-up">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-white">
+          Tentang Saya
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+          Saya adalah web developer yang fokus pada pembuatan tampilan modern,
+          responsif, dan scalable menggunakan teknologi web terbaru.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-white">
+          Tech Stack
+        </h2>
+
+        <div class="flex flex-wrap gap-3 sm:gap-4 md:gap-5">
+          <div class="tech-chip"><img src="./dist/image/icons/html5.svg"></div>
+          <div class="tech-chip"><img src="./dist/image/icons/css.svg"></div>
+          <div class="tech-chip"><img src="./dist/image/icons/js.svg"></div>
+          <div class="tech-chip"><img src="./dist/image/icons/tailwind-css.svg"></div>
+          <div class="tech-chip"><img src="./dist/image/icons/django.png" alt="Django"></div>
+          <div class="tech-chip"><img src="./dist/image/icons/postgresql.png" alt="Postgresql"></div>
         </div>
       </div>
-    </footer>
-   <!-- Footer Section End -->
 
-  <script src="dist/js/script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </div>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portofolio" class="py-20 md:py-28 lg:py-36">
+
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14 md:mb-16 lg:mb-20">
+      <h4 class="text-primary text-lg sm:text-xl md:text-2xl font-semibold">Portofolio</h4>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-3">
+        Project Terbaru
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+
+      <!-- Blog Frecationer -->
+      <div class="portfolio-card">
+
+        <div class="relative overflow-hidden">
+          <img src="./dist/image/portfolio/blog-frecationer.png"
+              alt="Blog Frecationer"
+              class="w-full transition duration-500 hover:scale-105">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        </div>
+
+        <div class="p-5 md:p-6">
+
+          <h3 class="text-lg md:text-xl font-semibold text-white">
+            Blog Frecationer
+          </h3>
+
+          <p class="text-sm md:text-base text-slate-400 mt-2">
+            Tampilan blog responsif yang dikembangkan menggunakan Tailwind CSS, menekankan pada layout yang bersih, komponen reusable, dan desain modern. Proyek ini menampilkan navigasi adaptif, kartu artikel, serta struktur desain yang mudah dikembangkan untuk website konten.
+          </p>
+
+          <div class="flex gap-2 mt-4 flex-wrap text-xs">
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              Tailwind CSS
+            </span>
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              HTML
+            </span>
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              Responsive Design
+            </span>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="portfolio-card">
+
+        <div class="relative overflow-hidden">
+          <img src="./dist/image/portfolio/spend-guard.png"
+              alt="SpendGuard App"
+              class="w-full transition duration-500 hover:scale-105">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        </div>
+
+        <div class="p-5 md:p-6">
+
+          <h3 class="text-lg md:text-xl font-semibold text-white">
+            SpendGuard – Finance Tracker
+          </h3>
+
+          <p class="text-sm md:text-base text-slate-400 mt-2">
+            Aplikasi web pengelola keuangan pribadi yang dikembangkan dengan Django dan Tailwind, memungkinkan pengguna memantau pemasukan, pengeluaran, saldo dompet, serta mendapatkan insight keuangan melalui grafik interaktif dan tampilan dashboard yang modern.
+          </p>
+
+          <div class="flex gap-2 mt-4 flex-wrap text-xs">
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              Django
+            </span>
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              Tailwind
+            </span>
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              Chart.js
+            </span>
+
+            <span class="px-2 py-1 rounded-md bg-white/5 border border-white/10">
+              PostgreSQL
+            </span>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-[#03060b] pt-12 sm:pt-14 md:pt-18 lg:pt-24 pb-8 sm:pb-10 border-t border-white/10">
+
+  <div class="container mx-auto px-5 sm:px-6 lg:px-8">
+
+    <!-- TITLE -->
+    <div class="text-center max-w-lg mx-auto mb-6 sm:mb-8">
+      <h3 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
+        Hubungi Saya
+      </h3>
+
+      <p class="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
+        Terbuka untuk kolaborasi, freelance, maupun diskusi project.
+      </p>
+    </div>
+
+    <!-- CONTACT GRID -->
+    <div class="grid grid-cols-2 lg:grid-cols-4
+                gap-y-5 gap-x-6
+                text-center max-w-xl mx-auto lg:max-w-none">
+
+      <!-- EMAIL -->
+      <div>
+        <p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">
+          Email
+        </p>
+
+        <a href="mailto:mohghazyaa@gmail.com"
+           class="text-xs sm:text-sm text-slate-300 hover:text-primary transition break-words">
+          mohghazyaa@gmail.com
+        </a>
+      </div>
+
+      <!-- LOKASI -->
+      <div>
+        <p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">
+          Lokasi
+        </p>
+
+        <p class="text-xs sm:text-sm text-slate-300">
+          Sidoarjo, Jawa Timur
+        </p>
+      </div>
+
+      <!-- GITHUB -->
+      <div>
+        <p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">
+          GitHub
+        </p>
+
+        <a href="https://github.com/MohGhazy"
+           target="_blank"
+           class="text-xs sm:text-sm text-slate-300 hover:text-primary transition break-words">
+          github.com/MohGhazy
+        </a>
+      </div>
+
+      <!-- INSTAGRAM -->
+      <div>
+        <p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">
+          Instagram
+        </p>
+
+        <a href="https://instagram.com/mohghazy_"
+           target="_blank"
+           class="text-xs sm:text-sm text-slate-300 hover:text-primary transition break-words">
+          instagram.com/mohghazy_
+        </a>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center mt-7 sm:mt-10 pt-5 border-t border-white/5">
+      <p class="text-[10px] sm:text-xs text-slate-500">
+        © 2026 Created by Ghazy. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="./dist/js/script.js"></script>
+
+<script>
+AOS.init();
+
+new Typed("#typed-name", {
+  strings: ["Ghazy", "Frontend Developer", "English Guide"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  loop: true
+});
+</script>
+
 </body>
 </html>
