@@ -198,3 +198,43 @@ body{
   height:auto;
   filter: brightness(1.2);
 }
+
+/* batasi teks portfolio */
+.portfolio-desc{
+  display:-webkit-box;
+  -webkit-line-clamp:4; /* jumlah baris */
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.portfolio-card{
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden transition duration-500;
+}
+
+.portfolio-card:hover{
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.floating-avatar{
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{ transform: translateY(0px); }
+  50%{ transform: translateY(-14px); }
+  100%{ transform: translateY(0px); }
+}
+
+.reveal-text{
+  opacity:0;
+  transform:translateY(30px);
+  animation:revealText 1s ease forwards;
+}
+
+@keyframes revealText{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

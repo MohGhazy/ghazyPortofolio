@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../dist/output.css" rel="stylesheet">
+<link rel="icon" href="../dist/image/favicon.io/favicon.ico" />
+<title>Blog Frecationer – Detail Proyek</title>
+
+<style>
+
+/* ===== HERO REVEAL ===== */
+.hero-title{
+  opacity:0;
+  transform:translateY(40px) scale(.98);
+  animation:heroReveal 1.2s ease forwards;
+}
+.hero-sub{
+  opacity:0;
+  transform:translateY(40px);
+  animation:heroReveal 1.2s ease forwards .25s;
+}
+@keyframes heroReveal{
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+/* ===== SCREENSHOT ANIMATION ===== */
+.project-shot{
+  opacity:0;
+  transform:scale(.92) translateY(40px);
+  animation:shotReveal 1.3s ease forwards .3s;
+}
+@keyframes shotReveal{
+  to{
+    opacity:1;
+    transform:scale(1) translateY(0);
+  }
+}
+
+/* ===== FEATURE STAGGER ===== */
+.feature-grid > div{
+  opacity:0;
+  transform:translateY(30px);
+  animation:cardReveal .8s ease forwards;
+}
+.feature-grid > div:nth-child(1){ animation-delay:.1s }
+.feature-grid > div:nth-child(2){ animation-delay:.25s }
+.feature-grid > div:nth-child(3){ animation-delay:.4s }
+.feature-grid > div:nth-child(4){ animation-delay:.55s }
+
+@keyframes cardReveal{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ===== BUTTON SHINE ===== */
+.btn-premium{
+  position:relative;
+  overflow:hidden;
+}
+.btn-premium::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.35),transparent);
+  transform:translateX(-100%);
+}
+.btn-premium:hover::before{
+  animation:btnShine .9s ease;
+}
+@keyframes btnShine{
+  to{ transform:translateX(100%); }
+}
+
+/* ===== CURSOR GLOW ===== */
+#cursorGlow{
+  position:fixed;
+  width:420px;
+  height:420px;
+  pointer-events:none;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(163,213,224,0.12),transparent 60%);
+  filter:blur(60px);
+  z-index:0;
+  top:0;
+  left:0;
+  transform:translate(-50%,-50%);
+}
+
+</style>
+</head>
+
+<body class="bg-[#05070d] text-slate-200 overflow-x-hidden">
+
+<!-- CURSOR GLOW -->
+<div id="cursorGlow"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="border-b border-white/10 bg-black/30 backdrop-blur sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <a href="../index.html" class="font-bold text-primary tracking-widest">
+      Ghazy
+    </a>
+
+    <a href="../projects.html"
+       class="text-sm border border-white/10 px-4 py-2 rounded-full hover:bg-white/5 transition">
+       ← Kembali
+    </a>
+
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="py-16 md:py-20 text-center relative overflow-hidden">
+
+  <h1 class="hero-title text-3xl md:text-5xl font-bold text-white">
+    Blog Frecationer
+  </h1>
+
+  <p class="hero-sub text-slate-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+    Platform blog komunitas yang dirancang untuk menampilkan artikel,
+    informasi, dan konten digital dengan tampilan modern dan responsif.
+  </p>
+
+</section>
+
+
+<!-- ================= SCREENSHOT ================= -->
+<section class="pb-16 md:pb-24">
+  <div class="container mx-auto px-6">
+
+    <img src="../dist/image/portfolio/blog-frecationer.png"
+         alt="Tampilan Blog Frecationer"
+         class="project-shot rounded-2xl shadow-lg mx-auto border border-white/10">
+
+  </div>
+</section>
+
+
+<!-- ================= DESKRIPSI ================= -->
+<section class="pb-16 md:pb-24">
+  <div class="container mx-auto px-6 max-w-3xl text-center">
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4">
+      Tentang Proyek
+    </h2>
+
+    <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+      Blog Frecationer merupakan website blog komunitas yang digunakan
+      untuk mempublikasikan artikel, berita, serta konten digital lainnya.
+      Proyek ini berfokus pada penyajian konten yang rapi, navigasi yang mudah,
+      serta tampilan yang responsif di berbagai perangkat.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ================= PERAN SAYA ================= -->
+<section class="pb-16 md:pb-24">
+  <div class="container mx-auto px-6 max-w-4xl">
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-white mb-8 text-center">
+      Peran Saya di Proyek Ini
+    </h2>
+
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 text-center">
+
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+        Pada proyek ini, saya bertanggung jawab dalam pengembangan
+        <span class="text-white font-semibold">bagian frontend website</span>.
+        Saya membangun struktur layout, komponen tampilan,
+        serta memastikan desain dapat berjalan dengan baik
+        di berbagai ukuran layar menggunakan Tailwind CSS.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FITUR FRONTEND ================= -->
+<section class="pb-16 md:pb-24">
+  <div class="container mx-auto px-6 max-w-4xl">
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-white mb-8 text-center">
+      Kontribusi Frontend
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6 text-sm md:text-base feature-grid">
+
+      <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+        ✔ Pembuatan layout halaman blog yang responsif
+      </div>
+
+      <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+        ✔ Desain kartu artikel dan struktur konten
+      </div>
+
+      <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+        ✔ Navigasi yang adaptif untuk mobile dan desktop
+      </div>
+
+      <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+        ✔ Styling modern menggunakan Tailwind CSS
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= TEKNOLOGI ================= -->
+<section class="pb-16 md:pb-24 text-center">
+  <div class="container mx-auto px-6">
+
+    <h2 class="text-2xl md:text-3xl font-semibold text-white mb-8">
+      Teknologi yang Digunakan
+    </h2>
+
+    <div class="flex flex-wrap justify-center gap-4 text-sm">
+
+      <span class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg">
+        HTML
+      </span>
+
+      <span class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg">
+        Tailwind CSS
+      </span>
+
+      <span class="px-3 py-2 bg-white/5 border border-white/10 rounded-lg">
+        Responsive Design
+      </span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= LINK ================= -->
+<section class="pb-24 text-center">
+
+  <a href="https://frecationer.com"
+     target="_blank"
+     class="btn-premium inline-block px-6 py-3 bg-primary text-black
+     rounded-full font-semibold mr-3 hover:scale-105 transition">
+     Kunjungi Website
+  </a>
+
+</section>
+
+
+<script>
+/* ===== CURSOR GLOW ===== */
+const glow = document.getElementById("cursorGlow");
+document.addEventListener("mousemove",(e)=>{
+  glow.style.top = e.clientY+"px";
+  glow.style.left = e.clientX+"px";
+});
+</script>
+
+</body>
+</html>
