@@ -6,7 +6,7 @@
 
 <link href="./dist/output.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="icon" href="./dist/image/favicon.io/favicon.ico" />
+<link rel="icon" href="./dist/image/favicon.io/favicon.ico">
 
 <title>All Projects</title>
 </head>
@@ -14,8 +14,9 @@
 <body class="bg-[#05070d] text-slate-200 overflow-x-hidden">
 
 <!-- ================= NAVBAR ================= -->
-<header class="border-b border-white/10 bg-black/30 backdrop-blur sticky top-0 z-50">
+<header class="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur">
   <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+    
     <a href="./index.html" class="font-bold text-primary tracking-widest text-lg">
       Ghazy
     </a>
@@ -24,6 +25,7 @@
        class="text-xs sm:text-sm border px-3 sm:px-4 py-2 rounded-full border-white/10 hover:bg-white/5 transition">
       Kembali
     </a>
+
   </div>
 </header>
 
@@ -32,17 +34,15 @@
 <section class="py-16 sm:py-20 md:py-24 text-center relative overflow-hidden">
 
   <!-- glow -->
-  <div class="absolute inset-0
-  bg-[radial-gradient(circle_at_20%_20%,rgba(163,213,224,0.18),transparent_45%)]"></div>
-
-  <div class="absolute inset-0
-  bg-[radial-gradient(circle_at_80%_70%,rgba(120,200,255,0.12),transparent_45%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(163,213,224,0.18),transparent_45%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(120,200,255,0.12),transparent_45%)]"></div>
 
   <!-- grid -->
   <div class="absolute inset-0 opacity-[0.04]
-  bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),
-  linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)]
-  bg-[size:70px_70px]"></div>
+      bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),
+      linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)]
+      bg-[size:70px_70px]">
+  </div>
 
   <div class="relative z-10 max-w-2xl mx-auto px-4 sm:px-6">
 
@@ -59,7 +59,6 @@
     </p>
 
   </div>
-
 </section>
 
 
@@ -71,116 +70,31 @@
 <section class="pb-20 sm:pb-24 md:pb-28">
   <div class="container mx-auto px-4 sm:px-6">
 
-    <div class="grid gap-6 sm:gap-8 md:gap-10
-                sm:grid-cols-2
-                lg:grid-cols-3">
-
-
-      <!-- ================= SPENDGUARD ================= -->
-      <a href="./projects/spendguard.html"
-         class="group block relative overflow-hidden rounded-2xl
-         bg-white/5 border border-white/10 backdrop-blur-xl
-         transition duration-500 hover:-translate-y-2 sm:hover:-translate-y-3
-         hover:shadow-[0_0_50px_rgba(163,213,224,0.25)]
-         flex flex-col"
-         data-aos="fade-up">
-
-        <!-- IMAGE -->
-        <div class="relative overflow-hidden
-                    h-48 sm:h-52 md:h-56">
-
-          <img src="./dist/image/portfolio/spend-guard.png"
-               class="w-full h-full object-cover
-               transition duration-700 group-hover:scale-110">
-
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-
-          <!-- CATEGORY -->
-          <span class="absolute top-3 left-3 sm:top-4 sm:left-4
-          text-[10px] sm:text-[11px] tracking-wide font-medium
-          px-3 py-1.5 rounded-full
-          bg-gradient-to-r from-black/80 to-black/60
-          text-white border border-white/30 shadow-lg backdrop-blur-md">
-            Personal Project
-          </span>
-
-          <!-- HOVER CTA -->
-          <div class="absolute inset-0 flex items-center justify-center opacity-0
-                      group-hover:opacity-100 transition duration-500">
-
-            <span class="px-5 py-2 rounded-full
-                         text-xs sm:text-sm
-                         bg-white/10 backdrop-blur border border-white/20">
-              Lihat Detail →
-            </span>
-
-          </div>
-
-        </div>
-
-        <!-- CONTENT -->
-        <div class="p-5 sm:p-6 flex flex-col flex-grow">
-
-          <h3 class="font-semibold text-white text-lg sm:text-xl">
-            SpendGuard
-          </h3>
-
-          <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed flex-grow">
-            Aplikasi manajemen keuangan pribadi yang berawal dari kebutuhan saya
-            sendiri untuk memahami pola pemasukan dan pengeluaran,
-            lalu dikembangkan menjadi dashboard finansial yang terstruktur.
-          </p>
-
-        </div>
-
-      </a>
-
+    <div class="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
       <!-- ================= FRECATIONER ================= -->
       <a href="./projects/blog-frecationer.html"
-         class="group block relative overflow-hidden rounded-2xl
-         bg-white/5 border border-white/10 backdrop-blur-xl
-         transition duration-500 hover:-translate-y-2 sm:hover:-translate-y-3
-         hover:shadow-[0_0_50px_rgba(163,213,224,0.25)]
-         flex flex-col"
+         class="group block relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl transition duration-500 hover:-translate-y-2 sm:hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(163,213,224,0.25)] flex flex-col"
          data-aos="fade-up" data-aos-delay="150">
 
-        <!-- IMAGE -->
-        <div class="relative overflow-hidden
-                    h-48 sm:h-52 md:h-56">
-
+        <div class="relative overflow-hidden h-48 sm:h-52 md:h-56">
           <img src="./dist/image/portfolio/blog-frecationer.png"
-               class="w-full h-full object-cover
-               transition duration-700 group-hover:scale-110">
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
 
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
 
-          <!-- CATEGORY -->
-          <span class="absolute top-3 left-3 sm:top-4 sm:left-4
-           text-[10px] sm:text-[11px] tracking-wide font-medium
-           px-3 py-1.5 rounded-full
-           bg-gradient-to-r from-black/80 to-black/60
-           text-white border border-white/30 shadow-lg backdrop-blur-md">
-             Community Project
-           </span>
+          <span class="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] tracking-wide font-medium px-3 py-1.5 rounded-full bg-gradient-to-r from-black/80 to-black/60 text-white border border-white/30 shadow-lg backdrop-blur-md">
+            Community Project
+          </span>
 
-          <!-- HOVER CTA -->
-          <div class="absolute inset-0 flex items-center justify-center opacity-0
-                      group-hover:opacity-100 transition duration-500">
-
-            <span class="px-5 py-2 rounded-full
-                         text-xs sm:text-sm
-                         bg-white/10 backdrop-blur border border-white/20">
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+            <span class="px-5 py-2 rounded-full text-xs sm:text-sm bg-white/10 backdrop-blur border border-white/20">
               Lihat Detail →
             </span>
-
           </div>
-
         </div>
 
-        <!-- CONTENT -->
         <div class="p-5 sm:p-6 flex flex-col flex-grow">
-
           <h3 class="font-semibold text-white text-lg sm:text-xl">
             Blog Frecationer
           </h3>
@@ -190,7 +104,43 @@
             frontend. Fokus utama pada layout responsif, komponen reusable,
             serta struktur UI yang scalable untuk website berbasis konten.
           </p>
+        </div>
 
+      </a>
+
+
+      <!-- ================= SPENDGUARD ================= -->
+      <a href="./projects/spendguard.html"
+         class="group block relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl transition duration-500 hover:-translate-y-2 sm:hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(163,213,224,0.25)] flex flex-col"
+         data-aos="fade-up">
+
+        <div class="relative overflow-hidden h-48 sm:h-52 md:h-56">
+          <img src="./dist/image/portfolio/spend-guard.png"
+               class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+          <span class="absolute top-3 left-3 sm:top-4 sm:left-4 text-[10px] sm:text-[11px] tracking-wide font-medium px-3 py-1.5 rounded-full bg-gradient-to-r from-black/80 to-black/60 text-white border border-white/30 shadow-lg backdrop-blur-md">
+            Personal Project
+          </span>
+
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+            <span class="px-5 py-2 rounded-full text-xs sm:text-sm bg-white/10 backdrop-blur border border-white/20">
+              Lihat Detail →
+            </span>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-6 flex flex-col flex-grow">
+          <h3 class="font-semibold text-white text-lg sm:text-xl">
+            SpendGuard
+          </h3>
+
+          <p class="text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed flex-grow">
+            Aplikasi manajemen keuangan pribadi yang berawal dari kebutuhan saya
+            sendiri untuk memahami pola pemasukan dan pengeluaran,
+            lalu dikembangkan menjadi dashboard finansial yang terstruktur.
+          </p>
         </div>
 
       </a>
@@ -205,19 +155,23 @@
         Proyek lain akan terus ditambahkan seiring waktu.
       </p>
 
-      <a href="./index.html"
-         class="inline-block px-6 sm:px-8 py-3 rounded-full
-         text-sm sm:text-base
-         bg-white/5 border border-white/10
-         hover:bg-white/10 transition">
-         Kembali ke Beranda
-      </a>
+      <div class="projects-cta reveal">
+        <a href="./index.html" class="projects-btn">
+          <span>Jelajahi Lebih Lanjut</span>
+          <svg class="projects-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L13 6M19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
 
     </div>
 
   </div>
 </section>
-
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
